@@ -39,9 +39,13 @@ const sampleDevices = [
   },
 ];
 
-
 const ListView = () => {
-    return (<ListTable devices={sampleDevices} />);
+  return (
+    <div className="flex flex-col items-center gap-4 mt-4">
+      <h1 className="text-2xl font-bold">Lista de Dispositivos</h1>
+      <ListTable devices={sampleDevices} />
+    </div>
+  );
 };
 
 export default ListView;
