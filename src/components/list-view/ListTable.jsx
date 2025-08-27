@@ -6,11 +6,11 @@ const ListTable = ({ devices }) => {
   const allColumns = [
     { key: "nombre", label: "Nombre" },
     { key: "categoria", label: "Categoría" },
-    { key: "total", label: "Total" },
-    { key: "ultimoMes", label: "Último Mes" },
-    { key: "ultimaSemana", label: "Última Semana" },
-    { key: "promedioMes", label: "Promedio Mes" },
-    { key: "promedioSemana", label: "Promedio Semana" },
+    { key: "total", label: "Total (kWh)" },
+    { key: "ultimoMes", label: "Último Mes (kWh)" },
+    { key: "ultimaSemana", label: "Última Semana (kWh)" },
+    { key: "promedioMes", label: "Promedio Mes (kWh)" },
+    { key: "promedioSemana", label: "Promedio Semana (kWh)" },
   ];
 
   const [visibleColumns, setVisibleColumns] = useState(
