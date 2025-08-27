@@ -16,8 +16,8 @@ const ColumnSelectorDialog = ({
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50">
-      <div className="bg-white rounded-2xl shadow-lg w-96 p-6">
+    <div className="fixed inset-0 flex items-center justify-center bg-black/70 z-10 ">
+      <div className="bg-white rounded-2xl shadow-lg w-96 p-6 ">
         <h2 className="text-lg font-semibold mb-4">
           Selecciona las columnas a mostrar
         </h2>
