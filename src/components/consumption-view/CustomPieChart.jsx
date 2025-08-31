@@ -9,7 +9,7 @@ const CustomTooltip = ({ active, payload }) => {
       style={{ visibility: isVisible ? "visible" : "hidden" }}
     >
       {isVisible && (
-        <Movement name={payload[0].name} value={payload[0].value} />
+        <Movement name={payload[0].name} value={payload[0].value} units="kWh" />
       )}
     </div>
   );
@@ -33,7 +33,7 @@ const CustomPieChart = ({ data }) => {
       </PieChart>
 
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <p className="font-bold text-4xl">${total}</p>
+        <p className="font-bold text-4xl -z-10">${total}</p>
       </div>
     </div>
   );
